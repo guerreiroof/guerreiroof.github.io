@@ -1,0 +1,179 @@
+.formacao {
+  background-color: #141414;
+}
+
+.formacao-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+  padding: 120px 20px;
+}
+
+.formacao .subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  text-transform: uppercase;
+  word-break: break-all;
+  max-width: 5ch;
+  color: #000000;
+  /* margin-top: 110px; */
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  color: #a3a3a3;
+  /* margin-top: 110px; */
+}
+
+.formacao-texto strong {
+  color: white;
+}
+
+.formacao-diplomas {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 60px 0px;
+  gap: 20px;
+}
+
+.formacao-diplomas-conteudo {
+  background-color: #000000;
+  padding: 20px 20px;
+  border-radius: 5px;
+  width: 190px;
+  position: relative;
+}
+
+.formacao-diplomas-conteudo::before {
+  content: "";
+  width: 4px;
+  height: 20px;
+  position: absolute;
+  background: linear-gradient(#b6f829, #67dd0a);
+  left: -4px;
+  top: 50px;
+}
+
+.formacao-diplomas-conteudo p {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  color: #a3a3a3;
+}
+
+.formacao-diplomas-conteudo h3 {
+  font-size: 1.125rem;
+  font-weight: bold;
+  max-width: 15ch;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.formacao-diplomas-conteudo span {
+  color: #a3a3a3;
+}
+
+.cursos h4 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+.cursos {
+  position: relative;
+}
+.cursos::before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: -4px;
+}
+.formacao-cursos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.formacao-cursos p {
+  text-align: start;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  color: #ffffff;
+}
+.formacao-cursos span {
+  text-align: end;
+  font-size: 1.125rem;
+  line-height: 1.1;
+  color: #8f8f8f;
+}
+
+.formacao-idiomas {
+  margin-top: 60px;
+  position: relative;
+  margin-bottom: 110px;
+}
+
+.formacao-idiomas::before {
+  content: url(./img/idiomas.svg);
+  position: absolute;
+  left: -30px;
+}
+
+.formacao-idiomas h4 {
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #8f8f8f;
+  margin-bottom: 30px;
+}
+
+.formacao-idiomas p {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-idiomas a {
+  color: #ffffff;
+}
+
+@media (max-width: 1000px) {
+  .formacao .subtitulo {
+    font-size: 6rem;
+  }
+
+  .formacao-texto {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .formacao-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+  }
+  .formacao .subtitulo {
+    font-size: 4rem;
+    line-height: 1;
+    text-transform: capitalize;
+    word-break: normal;
+    max-width: 5ch;
+    color: #000000;
+    /* margin-top: 110px; */
+  }
+  .formacao-diplomas {
+    display: flex;
+    justify-content: center;
+  }
+  .cursos {
+    margin-left: 20px;
+  }
+  .formacao-idiomas {
+    margin-left: 20px;
+  }
+}

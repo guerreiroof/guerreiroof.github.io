@@ -1,0 +1,60 @@
+.contato {
+  background-color: black;
+  color: white;
+}
+
+.contato-container {
+  max-width: 1200px;
+  gap: 100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 120px 20px;
+  position: relative;
+}
+
+.contato-container::before {
+  content: url(../img/detalhe.svg);
+  position: absolute;
+  top: -60px;
+}
+
+.contato-texto {
+  display: grid;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #cccccc;
+  padding: 40px 0px;
+}
+
+.contato-lista {
+  display: grid;
+  gap: 30px;
+  font-size: 2.25rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+
+.contato-container span {
+  font-size: 1.125rem;
+  line-height: 1.77;
+  color: #8f8f8f;
+}
+
+.contato-lista a {
+  color: white;
+}
+@media (max-width: 800px) {
+  .contato-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .contato-texto {
+    font-size: 1.5rem;
+    max-width: 45ch;
+  }
+  .contato-lista {
+    font-size: 1.5rem;
+  }
+}
